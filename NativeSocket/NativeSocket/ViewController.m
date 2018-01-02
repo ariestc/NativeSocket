@@ -8,12 +8,15 @@
 
 #import "ViewController.h"
 #import "SocketManager.h"
+#import "GCDSocketManager.h"
 
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *msgTextField;
 
 @property(nonatomic,strong) SocketManager *socketMgr;
+
+@property(nonatomic,strong) GCDSocketManager *gcdSocketMgr;
 
 @end
 
@@ -22,24 +25,40 @@
 
 - (IBAction)connectButton:(id)sender {
     
-    [self.socketMgr connect];
+    //1.
+//    [self.socketMgr connect];
+    
+    //2.
+    [self.gcdSocketMgr connect];
 }
 
 - (IBAction)sendMsg:(id)sender {
     
-    [self.socketMgr sendMessage:self.msgTextField.text];
+    //1.
+//    [self.socketMgr sendMessage:self.msgTextField.text];
+    
+    //2.
+    [self.gcdSocketMgr sendMessage:self.msgTextField.text];
 }
 
 - (IBAction)disConnetButton:(id)sender {
     
-    [self.socketMgr disConnect];
+    //1.
+//    [self.socketMgr disConnect];
+    
+    //2.
+    [self.gcdSocketMgr disConnect];
 }
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-   _socketMgr=[SocketManager shareManager];
+    //1.
+//   _socketMgr=[SocketManager shareManager];
+    
+    //2.
+    _gcdSocketMgr=[GCDSocketManager shareManager];
     
 }
 

@@ -14,6 +14,8 @@
 		91490C451FFB7F6F00416BC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91490C431FFB7F6F00416BC8 /* LaunchScreen.storyboard */; };
 		91490C481FFB7F6F00416BC8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91490C471FFB7F6F00416BC8 /* main.m */; };
 		91490C501FFB808100416BC8 /* SocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 91490C4F1FFB808100416BC8 /* SocketManager.m */; };
+		91490C5C1FFB98DE00416BC8 /* GCDSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 91490C5B1FFB98DE00416BC8 /* GCDSocketManager.m */; };
+		91490C5D1FFB9ADC00416BC8 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 91490C541FFB95F800416BC8 /* GCDAsyncSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		91490C471FFB7F6F00416BC8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		91490C4E1FFB808100416BC8 /* SocketManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketManager.h; sourceTree = "<group>"; };
 		91490C4F1FFB808100416BC8 /* SocketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketManager.m; sourceTree = "<group>"; };
+		91490C531FFB95F800416BC8 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		91490C541FFB95F800416BC8 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		91490C5A1FFB98DE00416BC8 /* GCDSocketManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDSocketManager.h; sourceTree = "<group>"; };
+		91490C5B1FFB98DE00416BC8 /* GCDSocketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDSocketManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +67,15 @@
 		91490C371FFB7F6F00416BC8 /* NativeSocket */ = {
 			isa = PBXGroup;
 			children = (
+				91490C511FFB95F800416BC8 /* GCD */,
 				91490C381FFB7F6F00416BC8 /* AppDelegate.h */,
 				91490C391FFB7F6F00416BC8 /* AppDelegate.m */,
 				91490C3B1FFB7F6F00416BC8 /* ViewController.h */,
 				91490C3C1FFB7F6F00416BC8 /* ViewController.m */,
 				91490C4E1FFB808100416BC8 /* SocketManager.h */,
 				91490C4F1FFB808100416BC8 /* SocketManager.m */,
+				91490C5A1FFB98DE00416BC8 /* GCDSocketManager.h */,
+				91490C5B1FFB98DE00416BC8 /* GCDSocketManager.m */,
 				91490C3E1FFB7F6F00416BC8 /* Main.storyboard */,
 				91490C411FFB7F6F00416BC8 /* Assets.xcassets */,
 				91490C431FFB7F6F00416BC8 /* LaunchScreen.storyboard */,
@@ -74,6 +83,15 @@
 				91490C471FFB7F6F00416BC8 /* main.m */,
 			);
 			path = NativeSocket;
+			sourceTree = "<group>";
+		};
+		91490C511FFB95F800416BC8 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				91490C531FFB95F800416BC8 /* GCDAsyncSocket.h */,
+				91490C541FFB95F800416BC8 /* GCDAsyncSocket.m */,
+			);
+			path = GCD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91490C5D1FFB9ADC00416BC8 /* GCDAsyncSocket.m in Sources */,
 				91490C3D1FFB7F6F00416BC8 /* ViewController.m in Sources */,
 				91490C481FFB7F6F00416BC8 /* main.m in Sources */,
+				91490C5C1FFB98DE00416BC8 /* GCDSocketManager.m in Sources */,
 				91490C501FFB808100416BC8 /* SocketManager.m in Sources */,
 				91490C3A1FFB7F6F00416BC8 /* AppDelegate.m in Sources */,
 			);
