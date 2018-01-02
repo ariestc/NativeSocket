@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "SocketManager.h"
 #import "GCDSocketManager.h"
+#import "WebSocketManager.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,8 @@
 @property(nonatomic,strong) SocketManager *socketMgr;
 
 @property(nonatomic,strong) GCDSocketManager *gcdSocketMgr;
+
+@property(nonatomic,strong) WebSocketManager *webSocketMgr;
 
 @end
 
@@ -29,7 +32,10 @@
 //    [self.socketMgr connect];
     
     //2.
-    [self.gcdSocketMgr connect];
+//    [self.gcdSocketMgr connect];
+    
+    //3.
+    [self.webSocketMgr connect];
 }
 
 - (IBAction)sendMsg:(id)sender {
@@ -38,7 +44,10 @@
 //    [self.socketMgr sendMessage:self.msgTextField.text];
     
     //2.
-    [self.gcdSocketMgr sendMessage:self.msgTextField.text];
+//    [self.gcdSocketMgr sendMessage:self.msgTextField.text];
+    
+    //3.
+    [self.webSocketMgr sendMessage:self.msgTextField.text];
 }
 
 - (IBAction)disConnetButton:(id)sender {
@@ -47,7 +56,10 @@
 //    [self.socketMgr disConnect];
     
     //2.
-    [self.gcdSocketMgr disConnect];
+//    [self.gcdSocketMgr disConnect];
+    
+    //3.
+    [self.webSocketMgr disConnect];
 }
 
 
@@ -58,7 +70,10 @@
 //   _socketMgr=[SocketManager shareManager];
     
     //2.
-    _gcdSocketMgr=[GCDSocketManager shareManager];
+//    _gcdSocketMgr=[GCDSocketManager shareManager];
+    
+    //3.
+    _webSocketMgr=[WebSocketManager shareManager];
     
 }
 

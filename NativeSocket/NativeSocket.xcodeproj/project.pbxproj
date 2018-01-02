@@ -16,9 +16,13 @@
 		91490C501FFB808100416BC8 /* SocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 91490C4F1FFB808100416BC8 /* SocketManager.m */; };
 		91490C5C1FFB98DE00416BC8 /* GCDSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 91490C5B1FFB98DE00416BC8 /* GCDSocketManager.m */; };
 		91490C5D1FFB9ADC00416BC8 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 91490C541FFB95F800416BC8 /* GCDAsyncSocket.m */; };
+		91490C601FFBA63600416BC8 /* WebSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 91490C5F1FFBA63600416BC8 /* WebSocketManager.m */; };
+		E5FC5D53A4B9637EFECDCC19 /* libPods-NativeSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F6133B7B354E7657C8026BD /* libPods-NativeSocket.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F6133B7B354E7657C8026BD /* libPods-NativeSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NativeSocket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F32151FB3EFADC3D2FB77A4 /* Pods-NativeSocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeSocket.release.xcconfig"; path = "Pods/Target Support Files/Pods-NativeSocket/Pods-NativeSocket.release.xcconfig"; sourceTree = "<group>"; };
 		91490C351FFB7F6F00416BC8 /* NativeSocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeSocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91490C381FFB7F6F00416BC8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		91490C391FFB7F6F00416BC8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -35,6 +39,9 @@
 		91490C541FFB95F800416BC8 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		91490C5A1FFB98DE00416BC8 /* GCDSocketManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDSocketManager.h; sourceTree = "<group>"; };
 		91490C5B1FFB98DE00416BC8 /* GCDSocketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDSocketManager.m; sourceTree = "<group>"; };
+		91490C5E1FFBA63600416BC8 /* WebSocketManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebSocketManager.h; sourceTree = "<group>"; };
+		91490C5F1FFBA63600416BC8 /* WebSocketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebSocketManager.m; sourceTree = "<group>"; };
+		99CD5DC6C233372D0121CDBD /* Pods-NativeSocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeSocket.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NativeSocket/Pods-NativeSocket.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5FC5D53A4B9637EFECDCC19 /* libPods-NativeSocket.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +61,8 @@
 			children = (
 				91490C371FFB7F6F00416BC8 /* NativeSocket */,
 				91490C361FFB7F6F00416BC8 /* Products */,
+				9C77C0465CEBC7267DFD8C55 /* Pods */,
+				CCE47C8BEA9177984D14EB5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +86,8 @@
 				91490C4F1FFB808100416BC8 /* SocketManager.m */,
 				91490C5A1FFB98DE00416BC8 /* GCDSocketManager.h */,
 				91490C5B1FFB98DE00416BC8 /* GCDSocketManager.m */,
+				91490C5E1FFBA63600416BC8 /* WebSocketManager.h */,
+				91490C5F1FFBA63600416BC8 /* WebSocketManager.m */,
 				91490C3E1FFB7F6F00416BC8 /* Main.storyboard */,
 				91490C411FFB7F6F00416BC8 /* Assets.xcassets */,
 				91490C431FFB7F6F00416BC8 /* LaunchScreen.storyboard */,
@@ -94,6 +106,23 @@
 			path = GCD;
 			sourceTree = "<group>";
 		};
+		9C77C0465CEBC7267DFD8C55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99CD5DC6C233372D0121CDBD /* Pods-NativeSocket.debug.xcconfig */,
+				8F32151FB3EFADC3D2FB77A4 /* Pods-NativeSocket.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CCE47C8BEA9177984D14EB5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F6133B7B354E7657C8026BD /* libPods-NativeSocket.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -101,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91490C4B1FFB7F6F00416BC8 /* Build configuration list for PBXNativeTarget "NativeSocket" */;
 			buildPhases = (
+				56847617C9552029392D5D83 /* [CP] Check Pods Manifest.lock */,
 				91490C311FFB7F6F00416BC8 /* Sources */,
 				91490C321FFB7F6F00416BC8 /* Frameworks */,
 				91490C331FFB7F6F00416BC8 /* Resources */,
+				F294B7A40F81804053405649 /* [CP] Embed Pods Frameworks */,
+				817774BA808A7DCF465154E0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,11 +192,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		56847617C9552029392D5D83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NativeSocket-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		817774BA808A7DCF465154E0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NativeSocket/Pods-NativeSocket-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F294B7A40F81804053405649 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NativeSocket/Pods-NativeSocket-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		91490C311FFB7F6F00416BC8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91490C601FFBA63600416BC8 /* WebSocketManager.m in Sources */,
 				91490C5D1FFB9ADC00416BC8 /* GCDAsyncSocket.m in Sources */,
 				91490C3D1FFB7F6F00416BC8 /* ViewController.m in Sources */,
 				91490C481FFB7F6F00416BC8 /* main.m in Sources */,
@@ -302,6 +386,7 @@
 		};
 		91490C4C1FFB7F6F00416BC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99CD5DC6C233372D0121CDBD /* Pods-NativeSocket.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -316,6 +401,7 @@
 		};
 		91490C4D1FFB7F6F00416BC8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F32151FB3EFADC3D2FB77A4 /* Pods-NativeSocket.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
