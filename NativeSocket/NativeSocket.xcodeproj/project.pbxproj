@@ -13,6 +13,7 @@
 		91490C421FFB7F6F00416BC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91490C411FFB7F6F00416BC8 /* Assets.xcassets */; };
 		91490C451FFB7F6F00416BC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91490C431FFB7F6F00416BC8 /* LaunchScreen.storyboard */; };
 		91490C481FFB7F6F00416BC8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91490C471FFB7F6F00416BC8 /* main.m */; };
+		91490C501FFB808100416BC8 /* SocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 91490C4F1FFB808100416BC8 /* SocketManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		91490C441FFB7F6F00416BC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91490C461FFB7F6F00416BC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91490C471FFB7F6F00416BC8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		91490C4E1FFB808100416BC8 /* SocketManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketManager.h; sourceTree = "<group>"; };
+		91490C4F1FFB808100416BC8 /* SocketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				91490C391FFB7F6F00416BC8 /* AppDelegate.m */,
 				91490C3B1FFB7F6F00416BC8 /* ViewController.h */,
 				91490C3C1FFB7F6F00416BC8 /* ViewController.m */,
+				91490C4E1FFB808100416BC8 /* SocketManager.h */,
+				91490C4F1FFB808100416BC8 /* SocketManager.m */,
 				91490C3E1FFB7F6F00416BC8 /* Main.storyboard */,
 				91490C411FFB7F6F00416BC8 /* Assets.xcassets */,
 				91490C431FFB7F6F00416BC8 /* LaunchScreen.storyboard */,
@@ -144,6 +149,7 @@
 			files = (
 				91490C3D1FFB7F6F00416BC8 /* ViewController.m in Sources */,
 				91490C481FFB7F6F00416BC8 /* main.m in Sources */,
+				91490C501FFB808100416BC8 /* SocketManager.m in Sources */,
 				91490C3A1FFB7F6F00416BC8 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
