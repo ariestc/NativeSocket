@@ -1,7 +1,7 @@
 # NativeSocket
 Native Socket Practice
 
-download socketServer.js
-teminal input:
-(After install node)
+first you should download socketServer.js file
+second open you terminal install node if you uninstall it
+last in your terminal input:
 node socketServer,js
